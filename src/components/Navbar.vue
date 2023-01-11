@@ -69,7 +69,7 @@ export default {
   },
   data() {
     return {
-      logo: "https://downthecrop.github.io/downthecrop.png",
+      logo: "downthecrop.png",
       showHambuger: false,
       windowWidth: window.innerWidth,
       paths: [
