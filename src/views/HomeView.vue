@@ -11,18 +11,21 @@ export default {
           name:"Lytical",
           image: "https://github.com/LyticalApp/lyticalapp.github.io/blob/main/images/Lytical-social.png?raw=true",
           members:"bryce",
+          link: "https://lytical.app/",
           description: "Open source League of Legends statistics and profile analytics tool for all regions including Garena & WeGame",
         },
         {
           name:"2009Scape Mobile",
           image: "https://i.imgur.com/o4nWDgF.png",
           members:"bryce",
+          link: "https://github.com/2009scape/2009Scape-mobile#readme",
           description: "Unoffical, unsupported, and unethical app to run 2009Scape on your Android device. Based on Pojav/Boardwalk.",
         },
         {
-          name:"TTV-OLED",
-          image: "https://i.imgur.com/Vq8kkC3.png",
+          name:"OLED-TTV",
+          image: "https://i.imgur.com/6Vs64Db.png",
           members:"bryce",
+          link: "https://downthecrop.github.io/OLED-TTV/",
           description: "Load up a highly customizable Twitch chat with extension emotes (BTTV, FFZ, 7TV) on any device with a browser.",
         },
       ]
@@ -38,7 +41,7 @@ export default {
       <div class="max-w-6xl  mx-auto flex flex-row">
         <div class="w-full px-4 md:py-10 lg:w-6/12">
           <h2 class="md:hidden text-3xl font-extrabold leading-9 dark:text-white mb-5 flex flex-row md:justify-start justify-center">
-            <img class="w-24 h-24 bg-black rounded-full dark:border-white" src="https://downthecrop.github.io/downthecrop.png" alt="" />
+            <img class="w-24 h-24 bg-black rounded-full dark:border-white" src="downthecrop.png" alt="" />
           </h2>
           <div class="mb-10 lg:mt-6 font-inter">
             <h2 class="mb-6 text-3xl font-bold leading-8 tracking-tight text-center dark:text-white sm:text-4xl md:text-left">
@@ -77,7 +80,7 @@ export default {
           </div>
         </div>
         <div class="z-10 justify-center hidden w-full px-4 py-10 lg:w-6/12 lg:flex">
-          <img class="rounded-full scale-75 border-solid border-8 border-pink-300 top-0" src="https://downthecrop.github.io/downthecrop.png">
+          <img class="rounded-full scale-75 border-solid border-8 border-pink-300 top-0" src="downthecrop.png">
         </div>
       </div>
     </div>
@@ -125,15 +128,15 @@ export default {
         </div>
       </div>
       <div class="pt-10 max-w-6xl mx-auto w-full lg:h-full dark:bg-darkBackground font-roboto" id="team">
-          <div class="px-8 mx-auto max-w-page">
-            <div class="mb-20">
+          <div class="px-8">
+            <div class="mb-20 mx-auto max-w-page">
               <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
                 <h3 class="mb-6 text-3xl font-bold text-black dark:text-white" id="portfolio">Portfolio</h3>
                 <p class="pb-2 mb-6 font-semibold text-pink-400 md:mb-12 md:pb-0">Amazing downthecrop software projects</p>
               </div>
-              <div class="grid grid-cols-3 md:grid-cols-3 gap-6 text-center">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                 <template v-for="(members, name) in config.team">
-                  <TeamCategory :name="members.name" :image="members.image" :description="members.description" />
+                  <TeamCategory :name="members.name" :image="members.image" :description="members.description" :link="members.link" />
                 </template>
               </div>
             </div>
