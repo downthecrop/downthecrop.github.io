@@ -6,6 +6,7 @@ export default {
   },
   data() {
     return {
+      logo: "downthecrop.png",
       config: {
         team: [{
           name:"Lytical",
@@ -18,7 +19,7 @@ export default {
           name:"2009Scape Mobile",
           image: "https://i.imgur.com/o4nWDgF.png",
           members:"bryce",
-          link: "https://github.com/2009scape/2009Scape-mobile#readme",
+          link: "https://downthecrop.github.io/2009Scape-Mobile/",
           description: "Unoffical, unsupported, and unethical app to run 2009Scape on your Android device. Based on Pojav/Boardwalk.",
         },
         {
@@ -41,7 +42,7 @@ export default {
       <div class="max-w-6xl  mx-auto flex flex-row">
         <div class="w-full px-4 md:py-10 lg:w-6/12">
           <h2 class="md:hidden text-3xl font-extrabold leading-9 dark:text-white mb-5 flex flex-row md:justify-start justify-center">
-            <img class="w-24 h-24 bg-black rounded-full dark:border-white" src="downthecrop.png" alt="" />
+            <img class="w-24 h-24 bg-black rounded-full dark:border-white" :src="logo" alt="" />
           </h2>
           <div class="mb-10 lg:mt-6 font-inter">
             <h2 class="mb-6 text-3xl font-bold leading-8 tracking-tight text-center dark:text-white sm:text-4xl md:text-left">
@@ -80,7 +81,7 @@ export default {
           </div>
         </div>
         <div class="z-10 justify-center hidden w-full px-4 py-10 lg:w-6/12 lg:flex">
-          <img class="rounded-full scale-75 border-solid border-8 border-pink-300 top-0" src="downthecrop.png">
+          <img class="rounded-full scale-75 border-solid border-8 border-pink-300 top-0" :src="logo">
         </div>
       </div>
     </div>

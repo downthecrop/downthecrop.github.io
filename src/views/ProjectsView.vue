@@ -26,6 +26,11 @@ data() {
     return {
       projects: [
         {
+          name:"CryptoBones - NFT Art Generator",
+          url: "https://github.com/downthecrop/CryptoBones",
+          description: "This project provides a Python script to generate unique NFT (Non-fungible token) art by combining different layers of images. It's especially useful for creating generative art for NFT projects where each piece has a unique combination of traits.", 
+        },
+        {
           name:"2009Scape-macOS-HD",
           url: "https://github.com/downthecrop/2009Scape-macOS-HD",
           description: "Exactly what it sounds like. Saradomin Launcher in a WineskinWrapper for HD/OpenGL on macOS.", 
@@ -49,6 +54,11 @@ data() {
           name:"RuneLite But You Can Save Your Password (BYCSYP)",
           url: "https://github.com/downthecrop/runelite-but-you-can-save-your-password",
           description: "RuneLite is a free, open source OldSchool RuneScape client... that didn't let you save your password and now you can!", 
+        },
+        {
+          name:"Cropcraft",
+          url: "https://github.com/downthecrop/Cropcraft",
+          description: "Python + Pyglet Minecraft clone for a youtube video for learning OpenGL", 
         },
         {
           name:"checkra1n TWRP",
@@ -78,7 +88,7 @@ data() {
         {
           name:"Adobe Photoshop CS2 Patcher",
           url: "https://github.com/downthecrop/CS2-Patcher",
-          description: "Asset swapped RS3 Jad Simulator for Old School Runescape", 
+          description: "Apply updater configs and update to the final supported version of CS2 + Add WebP support", 
         },
         {
           name:"Audio Remuxer",
